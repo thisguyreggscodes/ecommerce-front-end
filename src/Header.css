@@ -1,0 +1,169 @@
+.header {
+height: 100px;
+display: flex;
+align-items: center;
+background-color: #0A1045;
+position:sticky;
+top: 0;
+z-index: 100;
+}
+
+.header_logo {
+width: 150px;
+object-fit:cover;
+margin: 0 20px;
+margin-top: 18px;
+
+}
+
+.header_search { 
+display: flex;
+flex: 1;
+align-items: center;
+border-radius: 24px;
+}
+
+.header_searchInput {
+height: 12px;
+padding: 10px;
+border: none;
+width: 50%;
+
+}
+
+
+.header_searchIcon {
+padding: 5px;
+height: 22px !important;
+background-color: #cd9042;
+}
+
+.header_optionLineOne {
+font-size: 15px;
+
+}
+
+
+.header_optionLineTwo {
+font-size: 18px;
+font-weight: 800;
+
+}
+
+.header_optionBasket {
+display: flex;
+align-items: center;
+color: white;
+}
+
+.header_basketCount {
+margin-left: 10px;
+margin-right: 10px;
+
+}
+
+.header_nav {
+display: flex;
+justify-content:space-evenly;
+
+}
+
+.header_option {
+ display: flex;
+ flex-direction: column;
+ margin-left: 10px;
+ margin-right: 10px;
+ color: white;
+
+}
+
+.header:hover {
+color: yellow;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+.header {
+height: 30px;
+display: flex;
+align-items: center;
+background-color: #0A1045;
+position: sticky;
+top: 0;
+z-index: 100;
+
+}
+
+.header_logo {
+    width: 50px;
+    object-fit: center;
+    margin: 0 20px;
+    margin-top: 5px;
+
+}
+
+.header_search {
+display:contents;
+flex: 1;
+align-items: center;
+border-radius: 5px;
+height: 5px;
+padding: 5px;
+}
+
+.header_searchInput {
+    height: 5px;
+    padding: 5px;
+    border: none;
+    width: 50%;
+
+}
+
+
+.header_searchIcon {
+    padding: 5px;
+    height: 5px !important;
+    background-color: #cd9042;
+    
+}
+
+.header_optionLineOne {
+    font-size: 10px;
+    height: fit-content;
+
+}
+
+
+.header_optionLineTwo {
+    font-size: 7px;
+    font-weight: 600;
+
+}
+
+.header_optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header_basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.header_option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+}
