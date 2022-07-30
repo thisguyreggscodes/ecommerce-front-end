@@ -1,0 +1,87 @@
+[debug] [2022-07-26T04:55:44.995Z] ----------------------------------------------------------------------
+[debug] [2022-07-26T04:55:44.997Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-07-26T04:55:44.997Z] CLI Version:   11.2.0
+[debug] [2022-07-26T04:55:44.997Z] Platform:      win32
+[debug] [2022-07-26T04:55:44.998Z] Node Version:  v16.15.1
+[debug] [2022-07-26T04:55:45.004Z] Time:          Tue Jul 26 2022 12:55:44 GMT+0800 (Taipei Standard Time)
+[debug] [2022-07-26T04:55:45.005Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-26T04:55:45.010Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-07-26T04:55:45.122Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-26T04:55:45.122Z] > authorizing via signed-in user (reggie.brucales@gmail.com)
+[debug] [2022-07-26T04:55:45.123Z] [iam] checking project challenge-ef29e for permissions ["firebase.projects.get"]
+[debug] [2022-07-26T04:55:45.124Z] > refreshing access token with scopes: []
+[debug] [2022-07-26T04:55:45.125Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-26T04:55:45.125Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-26T04:55:45.392Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-26T04:55:45.392Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-26T04:55:45.410Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-ef29e:testIamPermissions [none]
+[debug] [2022-07-26T04:55:45.411Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-ef29e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-07-26T04:55:45.828Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-07-26T04:55:45.828Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-07-26T04:55:46.720Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-ef29e:testIamPermissions 200
+[debug] [2022-07-26T04:55:46.720Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-ef29e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-07-26T04:55:46.724Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-ef29e [none]
+[debug] [2022-07-26T04:55:47.237Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-ef29e 200
+[debug] [2022-07-26T04:55:47.237Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-ef29e {"projectId":"challenge-ef29e","projectNumber":"179179241412","displayName":"velasco-inventory","name":"projects/challenge-ef29e","resources":{"hostingSite":"challenge-ef29e","realtimeDatabaseInstance":"challenge-ef29e-default-rtdb","storageBucket":"challenge-ef29e.appspot.com","locationId":"asia-southeast2"},"state":"ACTIVE","etag":"1_4d7a2e2b-133b-461f-aac2-9a0058cc2f5a"}
+[info] 
+[info] === Serving from 'C:\Users\user\Documents\CAPSTONE\velasco'...
+[info] 
+[debug] [2022-07-26T04:55:47.244Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-ef29e/sites 
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-07-26T04:55:47.281Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\reggie_brucales_gmail.com_application_default_credentials.json
+[debug] [2022-07-26T04:55:47.284Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\reggie_brucales_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\reggie_brucales_gmail.com_application_default_credentials.json"}}
+[debug] [2022-07-26T04:55:47.286Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-ef29e/adminSdkConfig [none]
+[debug] [2022-07-26T04:55:47.757Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-ef29e/adminSdkConfig 200
+[debug] [2022-07-26T04:55:47.757Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-ef29e/adminSdkConfig {"projectId":"challenge-ef29e","databaseURL":"https://challenge-ef29e-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"challenge-ef29e.appspot.com","locationId":"asia-southeast2"}
+[debug] [2022-07-26T04:55:48.772Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-ef29e/sites 200
+[debug] [2022-07-26T04:55:48.773Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-ef29e/sites {"sites":[{"name":"projects/challenge-ef29e/sites/challenge-ef29e","defaultUrl":"https://challenge-ef29e.web.app","appId":"1:179179241412:web:544298a0a4ca761be0ee91","type":"DEFAULT_SITE"}]}
+[debug] [2022-07-26T04:55:48.773Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-ef29e/webApps/1:179179241412:web:544298a0a4ca761be0ee91/config [none]
+[debug] [2022-07-26T04:55:50.257Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-ef29e/webApps/1:179179241412:web:544298a0a4ca761be0ee91/config 200
+[debug] [2022-07-26T04:55:50.257Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-ef29e/webApps/1:179179241412:web:544298a0a4ca761be0ee91/config {"projectId":"challenge-ef29e","appId":"1:179179241412:web:544298a0a4ca761be0ee91","databaseURL":"https://challenge-ef29e-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"challenge-ef29e.appspot.com","locationId":"asia-southeast2","apiKey":"AIzaSyASEjlnmkY2WFBUk0eKDrFIcVColqZe-Ww","authDomain":"challenge-ef29e.firebaseapp.com","messagingSenderId":"179179241412","measurementId":"G-4LXE50YFHL"}
+[info] i  functions: Watching "C:\Users\user\Documents\CAPSTONE\velasco\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\Documents\\CAPSTONE\\velasco\\functions\" for Cloud Functions..."}}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-07-26T04:55:50.298Z] Validating nodejs source
+[debug] [2022-07-26T04:55:54.929Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "private": true
+}
+[debug] [2022-07-26T04:55:54.929Z] Building nodejs source
+[debug] [2022-07-26T04:55:54.930Z] Analyzing nodejs backend spec
+[debug] [2022-07-26T04:55:54.933Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-26T04:55:55.665Z] Serving at port 9005
+
+[debug] [2022-07-26T04:55:55.824Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-26T04:55:55.837Z] shutdown requested via /__/quitquitquit
+
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:04:56:05 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:04:56:05 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:04:56:05 +0000] "GET /static/css/main.20ca401c.css HTTP/1.1" 200 6118 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:04:56:05 +0000] \"GET /static/css/main.20ca401c.css HTTP/1.1\" 200 6118 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:04:56:05 +0000] "GET /static/js/main.add30001.js HTTP/1.1" 200 912041 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:04:56:05 +0000] \"GET /static/js/main.add30001.js HTTP/1.1\" 200 912041 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:04:56:05 +0000] "GET /static/media/velascocycles.c9a086e364931e341afd.png HTTP/1.1" 200 25193 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:04:56:05 +0000] \"GET /static/media/velascocycles.c9a086e364931e341afd.png HTTP/1.1\" 200 25193 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:04:56:05 +0000] "GET /static/media/homejpeg.1ed1908f0f96f9c61449.jpg HTTP/1.1" 200 1327524 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:04:56:05 +0000] \"GET /static/media/homejpeg.1ed1908f0f96f9c61449.jpg HTTP/1.1\" 200 1327524 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:04:56:05 +0000] "GET /favicon.ico HTTP/1.1" 200 3870 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:04:56:05 +0000] \"GET /favicon.ico HTTP/1.1\" 200 3870 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:04:56:06 +0000] "GET /manifest.json HTTP/1.1" 200 492 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:04:56:06 +0000] \"GET /manifest.json HTTP/1.1\" 200 492 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:04:56:06 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:04:56:06 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:04:57:00 +0000] "GET /static/media/homejpeg.1ed1908f0f96f9c61449.jpg HTTP/1.1" 200 1327524 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:04:57:00 +0000] \"GET /static/media/homejpeg.1ed1908f0f96f9c61449.jpg HTTP/1.1\" 200 1327524 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:05:53:57 +0000] "GET /login HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:05:53:57 +0000] \"GET /login HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:05:53:58 +0000] "GET /static/css/main.20ca401c.css HTTP/1.1" 200 6118 "http://localhost:5000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:05:53:58 +0000] \"GET /static/css/main.20ca401c.css HTTP/1.1\" 200 6118 \"http://localhost:5000/login\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:05:53:58 +0000] "GET /static/js/main.add30001.js HTTP/1.1" 200 912041 "http://localhost:5000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:05:53:58 +0000] \"GET /static/js/main.add30001.js HTTP/1.1\" 200 912041 \"http://localhost:5000/login\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Jul/2022:05:53:58 +0000] "GET /static/media/velascocycles.c9a086e364931e341afd.png HTTP/1.1" 200 25193 "http://localhost:5000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Jul/2022:05:53:58 +0000] \"GET /static/media/velascocycles.c9a086e364931e341afd.png HTTP/1.1\" 200 25193 \"http://localhost:5000/login\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36\""}}
